@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+    <head>
+        <title>CSS Framework</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(232, 233, 236);
+                margin-bottom: 0.5%;
+            }
+            button {
+                background-color: inherit;
+                border: none;
+                width: 10%;
+                height: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            button:hover {
+                background-color: black;
+                color: wheat;
+                cursor: pointer;
+            }
+            main {
+                display: flex;
+                justify-content: space-around;
+            }
+            aside {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 17px;
+                
+                margin-top: 1%;
+                border: solid 3.5px black;
+                width: 90vh;
+                height: 50vh;                
+            }
+            section {
+                margin-left: 0.1%;
+                margin-right: 0.1%;
+                margin-top: 2%;
+            }
+            footer {
+                /* align-self: flex-end; */
+                background-color: rgb(232, 233, 236);
+            }
+            @media (max-width:120vh) {
+                aside {
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 17px;
+                    
+                    margin-top: 1%;
+                    border: solid 3.5px black;
+                    width: 60vh;
+                    height: 30vh;                
+                }
+            }
+            @media (max-width:140vh) {
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    /* justify-content: space-around; */
+                    align-items: center;
+                    background-color: rgb(232, 233, 236);
+                    margin-bottom: 0.5%;
+                }   
+            }
+            @media (max-width:180vh) {
+                main {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <button>Home</button>
+            <button>Content</button>
+            <button>Services</button>
+            <button>About</button>
+        </nav>
+        <main>
+            <aside>
+                <section> This is flex item. </section>
+                <footer>Footer</footer>
+            </aside>
+            <aside  >
+                <section>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                    , and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </section>
+                <footer>Footer</footer>
+            </aside>
+        </main>
+    </body>
+
+</html>
